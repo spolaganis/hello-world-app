@@ -7,6 +7,7 @@ on:
 jobs:         
   stage-deploy:
     runs-on: ubuntu-latest
+    environment: staging
     steps:
       - name: Checkout this repo
         uses: actions/checkout@v4
@@ -38,6 +39,7 @@ jobs:
 
   prod-deploy:
     runs-on: ubuntu-latest
+    environment: production
     needs: stage-deploy
     steps:
       - name: Checkout this repo
