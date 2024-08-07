@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 output application/json
 ---
 {
-	"status" : "API is up and runnings"
+	"status" : "API is up and running"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
